@@ -56,10 +56,9 @@ func (b *Board) Get(row, col int) string {
 	// Sie können direkt auf das Array b.rows zugreifen, um den Inhalt der Zelle zu erhalten.
 	// Überprüfen Sie aber vorher, ob die angegebenen Zeilen- und Spaltenindizes
 	// innerhalb der Grenzen des Spielfelds liegen.
-	if row < 0 || row >= b.Height() || col < 0 || col >= b.Width() {
-		return ""
-	}
-	return b.rows[row][col]
+
+	// TODO
+	return ""
 }
 
 // Set setzt den Inhalt der Zelle an der angegebenen Position auf den angegebenen Wert.
@@ -69,8 +68,6 @@ func (b *Board) Set(row, col int, value string) {
 	// Sie können direkt auf das Array b.rows zugreifen, um den Inhalt der Zelle zu setzen.
 	// Überprüfen Sie aber vorher, ob die angegebenen Zeilen- und Spaltenindizes
 	// innerhalb der Grenzen des Spielfelds liegen.
-	if row < 0 || row >= b.Height() || col < 0 || col >= b.Width() {
-		return
-	}
-	b.rows[row][col] = value
+
+	// TODO
 }

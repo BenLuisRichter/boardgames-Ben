@@ -18,7 +18,9 @@ func NewGame() *Game {
 func (g *Game) Get(row, col int) string {
 	// Hinweis:
 	// Sie können direkt board.Get verwenden, da die Überprüfung der Grenzen bereits dort implementiert ist.
-	return g.board.Get(row, col)
+
+	// TODO
+	return ""
 }
 
 // Set setzt den Inhalt der Zelle an der angegebenen Position auf den angegebenen Wert.
@@ -26,7 +28,6 @@ func (g *Game) Get(row, col int) string {
 func (g *Game) Set(row, col int, value string) {
 	// Hinweis:
 	// Sie können direkt board.Set verwenden, aber überprüfen Sie vorher mit MoveAllowed, ob der Zug erlaubt ist.
-	if g.MoveAllowed(row, col) {
-		g.board.Set(row, col, value)
-	}
+
+	// TODO
 }

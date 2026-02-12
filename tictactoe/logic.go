@@ -6,21 +6,27 @@ package tictactoe
 func (g *Game) PlayerWins(player string) bool {
 	// Hinweis:
 	// Verwenden Sie die Funktion BoardContainsChain mit einer Länge von 3.
-	return g.board.BoardContainsChain(player, 3)
+
+	// TODO
+	return false
 }
 
 // GameOver prüft, ob das Spiel vorbei ist, d.h. ob ein Spieler gewonnen hat oder das Spielfeld voll ist.
 func (g *Game) GameOver() bool {
 	// Hinweis:
 	// Verwenden Sie PlayerWins für beide Spieler und BoardContains, um zu überprüfen, ob das Spielfeld voll ist.
-	return g.PlayerWins("X") || g.PlayerWins("O") || !g.board.BoardContains(" ")
+
+	// TODO
+	return false
 }
 
 // IsDraw prüft, ob das Spiel unentschieden ist, d.h. ob das Spielfeld voll ist und kein Spieler gewonnen hat.
 func (g *Game) IsDraw() bool {
 	// Hinweis:
 	// Verwenden Sie die bisherigen Logik-Funktionen von Game.
-	return !g.board.BoardContains(" ") && !g.PlayerWins("X") && !g.PlayerWins("O")
+
+	// TODO
+	return false
 }
 
 // MoveAllowed prüft, ob ein Zug an der angegebenen Position erlaubt ist.
@@ -29,5 +35,7 @@ func (g *Game) MoveAllowed(row, col int) bool {
 	// Hinweis:
 	// Die Prüfungslogik für row und col ist bereits in Get implementiert.
 	// Sie müssen hier also nur noch überprüfen, was Get geliefert hat.
-	return g.board.Get(row, col) == " "
+
+	// TODO
+	return false
 }
